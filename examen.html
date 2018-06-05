@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Prueba Final.- HTML, CSS, JQUERY - Area51</title>
+	<style type="text/css">
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		
+		.container .menu  {
+			height: 900px;
+			background-color: #f1f1f1;
+			width: 30%;
+			float: left;
+			padding: 0px;
+			margin: 0px 0px 0px 0px;	
+		}
+		
+		.container .right {
+			height: 900px;
+			width: 70%;
+			background-color: #f7f1be;
+			float: left;
+		}
+		
+		.titulo {
+			font-size: 35px;
+		}
+		
+		.texto_alineado {
+			padding: 0px 25px 0px 25px;
+			text-align: justify;
+		}
+		
+		.subtitle-texto-alineado {
+			font-size: 30px;
+			padding: 0px 25px 0px 25px;
+			text-align: justify;
+			font-weight: bold;
+			text-transform: capitalize;
+			font-variant:small-caps;
+			font-weight:bold;
+		}
+		
+		/* -------------- Menú Lateral ------------- */
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			background-color: #f1f1f1;
+		}
+
+		li a {
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+		}
+
+		li a.active {
+			background-color: #f7ae4f;
+			color: white;
+		}
+
+		li a:hover:not(.active) {
+			background-color: #f7cd96;
+			color: white;
+		}
+		/* ----------------------------------------- */
+	</style>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/prueba.js"></script>	
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<h2 class="titulo">Caninos Lifestyle</h2>
+			<ul>
+			   <li><a id="page1" class="active" href="#">Inicio</a></li> 
+			   <li><a id="page2" href="https://elcomercio.pe/" target="_blank">Contenido</a></li>
+			   <li><a id="page3" href="https://es-la.facebook.com/" target="_blank">Enlaces</a></li>
+			   <li><a id="page4" href="https://twitter.com/?lang=es" target="_blank">Contactos</a></li> 
+			</ul>
+		</div>
+		<div class="right" id="pages">
+			<p class="subtitle-texto-alineado">
+				Bienvenido
+			</p>	
+			<p class="texto_alineado">
+				¿Te suena familiar el nombre de "Hachiko"? Hachiko fue un fiel perro japonés que esperó durante 10 años en la estación de trenes a su propietario, el cuál había fallecido mientras desempeñaba su función como profesor.
+			</p>
+			<p class="texto_alineado">
+				Este perro llegó a alcanzar una fama mundial y cuenta con una estatua en la propia estación donde falleció, además, se realizó una película estadounidense, "Hachiko, siempre a tu lado", gracias a la cual pude conocer a esta impresionante raza canina, el akita inu.
+			</p>
+			<p class="texto_alineado">
+				<img src="img/akita.jpg" alt="Smiley face">
+			</p>
+			<p id="external_text" class="texto_alineado">
+			</p>
+		</div>
+	</div>
+</body>
+</html>
